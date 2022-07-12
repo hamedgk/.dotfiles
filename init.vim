@@ -8,6 +8,8 @@
 :set mouse=a
 :set encoding=UTF-8
 
+let mapleader = " " " map leader to Space
+
 call plug#begin()
 
 
