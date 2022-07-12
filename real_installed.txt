@@ -1,0 +1,87 @@
+Commandline: apt-get --force-yes --yes install ubuntu-keyring
+Commandline: apt-get --force-yes --yes upgrade
+Commandline: apt-get --force-yes --yes dist-upgrade
+Commandline: apt-get --force-yes --yes install ubiquity-slideshow-mint ubiquity-casper libdmraid1.0.0.rc16 ubiquity-frontend-gtk xfsprogs firefox-locale-en language-pack-en dmraid kpartx-boot kpartx language-pack-en-base libnss3 jfsutils wamerican grub-gfxpayload-lists gparted boot-repair boot-sav boot-sav-extra glade2script mint-live-session
+Commandline: apt-get remove --purge -y --force-yes humanity-icon-theme ubuntu-mono
+Commandline: apt-get remove --purge ubuntu-advantage-tools -y
+Commandline: apt-get --no-upgrade -o Acquire::gpgv::Options::=--ignore-time-conflict -y install grub-efi-amd64-signed
+Commandline: apt-get --no-upgrade -o Acquire::gpgv::Options::=--ignore-time-conflict -y install shim-signed
+Commandline: /usr/bin/apt upgrade
+Commandline: /usr/bin/apt install git tmux vim laptop-mode-tools
+Commandline: /usr/bin/apt install build-essential mysql-server php phpunit
+Commandline: /usr/bin/apt install dia
+Commandline: /usr/bin/apt install htop ncdu ranger
+Commandline: /usr/bin/apt install telegram-desktop
+Commandline: /usr/bin/apt install iftop
+Commandline: /usr/bin/apt install composer
+Commandline: /usr/bin/apt install php-curl
+Commandline: /usr/bin/apt upgrade
+Commandline: /usr/bin/apt install php-gd
+Commandline: /usr/bin/apt install php-zip
+Commandline: /usr/bin/apt remove php-curl php-gd php-zip
+Commandline: /usr/bin/apt autoremove
+Commandline: /usr/bin/apt install php-curl php-gd php-zip
+Commandline: /usr/bin/apt install nvme-cli
+Commandline: /usr/bin/apt install php-mysql
+Commandline: /usr/bin/apt install rar
+Commandline: /usr/bin/apt install docker.io
+Commandline: /usr/bin/apt install docker-compose
+Commandline: /usr/bin/apt install codeblocks
+Commandline: /usr/bin/apt purge codeblocks codeblocks-common
+Commandline: /usr/bin/apt autoremove
+Commandline: /usr/bin/apt install expect
+Commandline: /usr/bin/apt install edb-debugger
+Commandline: /usr/bin/apt upgrade
+Commandline: /usr/bin/apt install cmake codeblocks
+Commandline: /usr/bin/apt purge codeblocks*
+Commandline: /usr/bin/apt purge expect
+Commandline: /usr/bin/apt remove nodejs
+Commandline: /usr/bin/apt autoremove
+Commandline: /usr/bin/apt upgrade
+Commandline: /usr/bin/apt install radare2
+Commandline: /usr/bin/apt install hexedit
+Commandline: /usr/bin/apt upgrade
+Commandline: /usr/bin/apt purge edb-debugger edb-debugger-plugins
+Commandline: /usr/bin/apt upgrade
+Commandline: /usr/bin/apt install codeblocks
+Commandline: /usr/bin/apt install xclip
+Commandline: /usr/bin/apt upgrade
+Commandline: /usr/bin/apt install cmake-qt-gui
+Commandline: /usr/bin/apt install openshot
+Commandline: /usr/bin/apt remove openshot*
+Commandline: /usr/bin/apt purge blender imagemagick
+Commandline: /usr/bin/apt purge blender-data
+Commandline: /usr/bin/apt purge imagemagick-6*
+Commandline: /usr/bin/apt autoremove
+Commandline: /usr/bin/apt install zsh
+Commandline: /usr/bin/apt install kazam
+Commandline: /usr/bin/apt remove thunderbird-locale-fa
+Commandline: /usr/bin/apt upgrade
+Commandline: /usr/bin/apt remove youtube-dl
+Commandline: /usr/bin/apt autoremove
+Commandline: /usr/bin/apt install gromit-mpx
+Commandline: /usr/bin/apt install gimp
+Commandline: /usr/bin/apt remove gimp
+Commandline: /usr/bin/apt remove gimp-data
+Commandline: /usr/bin/apt autoremove
+Commandline: /usr/bin/apt remove php phpunit
+Commandline: /usr/bin/apt upgrade
+Commandline: /usr/bin/apt autoremove
+Commandline: /usr/bin/apt remove php*
+Commandline: /usr/bin/apt autoremove
+Commandline: /usr/bin/apt install rustc cargo
+Commandline: /usr/bin/apt purge php7.*
+Commandline: /usr/bin/apt purge php*
+Commandline: /usr/bin/apt purge apache2
+Commandline: /usr/bin/apt install g++-10
+Commandline: /usr/bin/apt purge g++-10
+Commandline: /usr/bin/apt autoremove
+Commandline: /usr/bin/apt purge cargo rustc
+Commandline: /usr/bin/apt autoremove
+Commandline: /usr/bin/apt install neovim
+Commandline: /usr/bin/apt purge neovim
+Commandline: /usr/bin/apt autoremove
+Commandline: /usr/bin/apt upgrade
+Commandline: /usr/bin/apt upgrade
+Commandline: /usr/bin/apt install neovim
+Commandline: /usr/bin/apt install fzf ripgrep
