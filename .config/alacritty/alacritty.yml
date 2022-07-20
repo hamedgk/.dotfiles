@@ -1,0 +1,26 @@
+import:
+  - /home/hamedgk/.config/draculatheme/dracula.yml
+
+
+font:
+  normal:
+    family: JetBrainsMono
+    style: Regular
+
+  bold:
+    family: JetBrainsMono
+    style: Bold
+
+  italic:
+    family: JetBrainsMono
+    style: Italic
+
+  bold_italic:
+    family: JetBrainsMono
+    style: Bold Italic
+
+  size: 11
+
+
+window:
+  opacity: 0.7
