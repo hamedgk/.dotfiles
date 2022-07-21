@@ -34,7 +34,7 @@ nnoremap <silent><leader>l :Buffers<CR>
 inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" : "\<TAB>"
 
-
+inoremap <silent><expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-TAB>"
 
 "set omnifunc=ale#completion#OmniFunc
 let g:ale_completion_enabled = 1
