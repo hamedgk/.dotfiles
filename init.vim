@@ -30,9 +30,14 @@ nnoremap <C-g> :Rg<Cr>
 "listing buffers
 nnoremap <silent><leader>l :Buffers<CR>
 
+"autocompletion in ale
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" : "\<TAB>"
+
+
 
 "set omnifunc=ale#completion#OmniFunc
-let g:ale_completion_enabled = 0
+let g:ale_completion_enabled = 1
 let g:ale_completion_autoimport = 0
 let g:ale_sign_column_always = 1
 let g:ale_fix_on_save = 1
@@ -47,8 +52,8 @@ let g:ale_set_highlights = 0
 let g:ale_sign_error = "✗"
 let g:ale_sign_warning = "⚠"
 
-let g:ale_linters = {'rust': ['rls']}
-let g:ale_rust_rls_executable = '/home/hamedgk/.cargo/bin/rls'
+let g:ale_linters = {'rust': ['analyzer']}
+let g:ale_rust_rls_executable = '/home/hamedgk/.cargo/bin/rust-analyzer'
 let g:ale_rust_rls_toolchain = 'stable'
 
 Plug 'dense-analysis/ale'
