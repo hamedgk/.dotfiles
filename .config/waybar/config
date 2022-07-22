@@ -27,14 +27,15 @@
     ],
     "modules-right": [
         "network",
-        "memory",
-        "cpu",
+        //"memory",
+        //"cpu",
         "temperature",
         "custom/keyboard-layout",
         "battery",
         "tray",
         "clock#date",
-        "clock#time"
+        "clock#time",
+	"pulseaudio"
     ],
 
 
@@ -137,7 +138,7 @@
     },
 
     "pulseaudio": {
-        //"scroll-step": 1,
+        "scroll-step": 5,
         "format": "{icon}  {volume}%",
         "format-bluetooth": "{icon}  {volume}%",
         "format-muted": "",
