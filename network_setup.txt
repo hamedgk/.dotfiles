@@ -18,3 +18,18 @@ NameResolvingService=systemd
 
 
 these enable iwd to do dhcp stuff and dns stuff
+
+
+in file /etc/NetworkManager/conf.d/dhcp-client.conf
+add these to tell networkmanager to use dhclient instead of internal dhcp client:
+
+[main]
+dhcp=dhclient
+
+
+
+in file /etc/NetworkManager/conf.d/dns.conf
+add these to tell networkmanager explicitly which dns to use(although systemd-resolved is the default):
+
+[main]
+dns=systemd-resolved
