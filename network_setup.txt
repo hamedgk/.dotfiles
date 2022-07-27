@@ -1,35 +1,41 @@
-installed networkmanager
+installed NetworkManager
 installed dhclient
 installed iwd
 
 make sure you have enabled systemd-resolved
-make sure you have NOT enabled systemd-resolved
+make sure you have NOT enabled systemd-networkd (it conflicts with NetworkManager)
 
+-----------------------------------------------------------------------------------------------------
 
 make the file /etc/iwd/main.conf
 
-and add these fields:
+and add these configs:
 
-[General]
-EnableNetworkConfiguration=true
+    [General]
+    EnableNetworkConfiguration=true
 
-[Network]
-NameResolvingService=systemd
+    [Network]
+    NameResolvingService=systemd
 
 
 these enable iwd to do dhcp stuff and dns stuff
 
+-----------------------------------------------------------------------------------------------------
 
 in file /etc/NetworkManager/conf.d/dhcp-client.conf
 add these to tell networkmanager to use dhclient instead of internal dhcp client:
 
-[main]
-dhcp=dhclient
+    [main]
+    dhcp=dhclient
 
 
+-----------------------------------------------------------------------------------------------------
 
 in file /etc/NetworkManager/conf.d/dns.conf
-add these to tell networkmanager explicitly which dns to use(although systemd-resolved is the default):
+add these to tell networkmanager explicitly which dns to use (although systemd-resolved is the default):
 
-[main]
-dns=systemd-resolved
+    [main]
+    dns=systemd-resolved
+
+-----------------------------------------------------------------------------------------------------
+
