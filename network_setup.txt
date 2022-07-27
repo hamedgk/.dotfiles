@@ -1,0 +1,20 @@
+installed networkmanager
+installed dhclient
+installed iwd
+
+make sure you have enabled systemd-resolved
+make sure you have NOT enabled systemd-resolved
+
+
+make the file /etc/iwd/main.conf
+
+and add these fields:
+
+[General]
+EnableNetworkConfiguration=true
+
+[Network]
+NameResolvingService=systemd
+
+
+these enable iwd to do dhcp stuff and dns stuff
