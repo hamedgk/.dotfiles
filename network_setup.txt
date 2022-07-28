@@ -39,3 +39,20 @@ add these to tell networkmanager explicitly which dns to use (although systemd-r
 
 -----------------------------------------------------------------------------------------------------
 
+the problem with iwd is: it's unit starts before even the wifi card power on
+so the wlan0 interface disapeares. as workaround:
+
+sudo systemctl edit iwd.service
+
+opens up an editor
+
+add these section:
+
+    [Service]
+    ExecStartPre=/usr/bin/sleep 2
+
+the overridden file is stored here:
+    /etc/systemd/system/iwd.service.d/override.conf
+
+there is troubleshooting section in iwd arch wiki addressed this issue.
+-----------------------------------------------------------------------------------------------------
