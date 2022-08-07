@@ -14,11 +14,11 @@ prompt_vcs () {
     if [ "${vcs_info_msg_0_}" = "" ]; then
         dir_status="%F{2}→%f"
     elif [[ $(git diff --cached --name-status 2>/dev/null ) != "" ]]; then
-        dir_status="%F{1}▶%f"
+        dir_status="%F{1}→%f"
     elif [[ $(git diff --name-status 2>/dev/null ) != "" ]]; then
-        dir_status="%F{3}▶%f"
+        dir_status="%F{3}→%f"
     else
-        dir_status="%F{2}▶%f"
+        dir_status="%F{2}→%f"
     fi
 }
 
