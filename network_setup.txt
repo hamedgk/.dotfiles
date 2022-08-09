@@ -56,3 +56,9 @@ the overridden file is stored here:
 
 there is troubleshooting section in iwd arch wiki addressed this issue.
 -----------------------------------------------------------------------------------------------------
+
+
+go to laptop mode tools archwiki and in the wireless section:
+    disable wireless power saving in:
+        /etc/laptop-mode/conf.d/wireless-power.conf
+
