@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-buffer'
  
+    use 'rust-lang/rust.vim'
     use 'simrat39/rust-tools.nvim'
 
     -- Snippet engine
