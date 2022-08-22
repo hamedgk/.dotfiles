@@ -2,3 +2,4 @@
 .config/vlc
 .config/htop
 .config/pulse
+.config/nvim/plugin
