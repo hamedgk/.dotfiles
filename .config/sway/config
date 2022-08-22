@@ -18,7 +18,7 @@ set $term "LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/alacritty"
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu bemenu-run -l 5 --fn JetBrainsMono[5]  | xargs swaymsg exec --
 
 
 
@@ -221,26 +221,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-mode "gromit-mpx" {
-    # toggle painting
-    bindsym f9 exec gromit-mpx --toggle
-    # clear
-    bindsym Shift+f9 exec gromit-mpx --clear
-    # toggle visibility
-    bindsym Ctrl+f9 exec gromit-mpx --visibility
-    # quit
-    bindsym Alt+f9 exec gromit-mpx --quit
-    # undo
-    bindsym f8 exec gromit-mpx --undo
-    # redo
-    bindsym Shift+f8 exec gromit-mpx --redo
-
-    # Return to default mode
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-bindsym $mod+g mode "gromit-mpx"
-
+include ./gromit-mpx.conf
 #
 # Status Bar:
 #
