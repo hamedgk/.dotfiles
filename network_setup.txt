@@ -55,6 +55,8 @@ the overridden file is stored here:
     /etc/systemd/system/iwd.service.d/override.conf
 
 there is troubleshooting section in iwd arch wiki addressed this issue.
+
+note: this solution doesn't work 100%. sometimes you need to restart the iwd service!
 -----------------------------------------------------------------------------------------------------
 
 
