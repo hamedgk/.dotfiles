@@ -75,9 +75,14 @@
  * -------------------------------------------------------------------------- */
 
 #battery {
+    color: white;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+#custom-keyboard-layout {
+    color: white;
 }
 
 #battery.warning {
@@ -99,6 +104,7 @@
 }
 
 #clock {
+    color: white;
     font-weight: bold;
 }
 
@@ -138,7 +144,7 @@
 }
 
 #network {
-    /* No styles */
+    color: white;
 }
 
 #network.disconnected {
@@ -146,6 +152,7 @@
 }
 
 #pulseaudio {
+    color: white;
     /* No styles */
 }
 
