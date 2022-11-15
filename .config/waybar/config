@@ -16,7 +16,7 @@
     "position": "bottom",
 
     // If height property would be not present, it'd be calculated dynamically
-    "height": 30,
+    "height": 20,
 
     "modules-left": [
         "sway/workspaces",
@@ -66,7 +66,7 @@
     "clock#time": {
         "interval": 60,
         "format": "{:%H:%M}",
-        "tooltip": false
+        "tooltip": true
     },
 
     "clock#date": {
