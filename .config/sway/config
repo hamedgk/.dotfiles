@@ -233,5 +233,5 @@ bar {
 include /etc/sway/config.d/*
 
 
-gaps inner 10
-gaps outer 6
+gaps inner 6
+gaps outer 2
