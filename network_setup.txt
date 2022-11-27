@@ -64,3 +64,10 @@ go to laptop mode tools archwiki and in the wireless section:
     disable wireless power saving in:
         /etc/laptop-mode/conf.d/wireless-power.conf
 
+
+
+-----------------------------------------------------------------------------------------------------
+at the end disable NetworkManager service as it's not useful while using iwd, and it conflicts with it!!!
+
+
+
