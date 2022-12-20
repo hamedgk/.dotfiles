@@ -3,6 +3,7 @@ alsa-utils 1.2.8-1
 autoconf 2.71-1
 automake 1.16.5-1
 base 3-1
+bc 1.07.1-4
 bemenu-wayland 0.6.13-1
 bison 3.8.2-4
 brightnessctl 0.5.1-2
@@ -16,6 +17,7 @@ gcc 12.2.0-1
 gdb 12.1-2
 git 2.38.1-2
 gnu-netcat 0.7.1-8
+grim 1.4.0-2
 gromit-mpx 1.4.3-2
 grub 2:2.06.r380.g151467888-1
 hdparm 9.65-1
@@ -48,6 +50,7 @@ sudo 1.9.12.p1-1
 sway 1:1.7-10
 swaybg 1.2.0-1
 swayidle 1.8.0-1
+swayimg 1.9-2
 swaylock 1.7-1
 texinfo 7.0.1-1
 ttf-font-awesome 6.2.1-1
