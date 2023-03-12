@@ -6,7 +6,7 @@ local o = vim.o
 
 o.termguicolors = true
 o.background = 'dark'
-vim.cmd('colorscheme nightfox')
+vim.cmd('colorscheme carbonfox')
 
 
 -- Do not save when switching buffers
