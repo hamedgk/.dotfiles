@@ -48,15 +48,19 @@ map('o', 'A', ':<C-U>normal! mzggVG<CR>`z')
 map('x', 'A', ':<C-U>normal! ggVG<CR>')
 
 
+
 -- Telescope Keymaps
-vim.api.nvim_set_keymap('n', '<Leader>ff', ':Telescope find_files<CR>', {
+map('n', '<Leader>ff', ':Telescope find_files<CR>', {
     noremap = true,
     silent = true
 })
 
-vim.api.nvim_set_keymap('n', '<Leader>fb', ':Telescope buffers<CR>', {
+map('n', '<Leader>fb', ':Telescope buffers<CR>', {
     noremap = true,
     silent = true
 })
 
-
+map('n', '<Leader>fc', ':Telescope colorscheme<CR>', {
+    noremap = true,
+    silent = true
+})

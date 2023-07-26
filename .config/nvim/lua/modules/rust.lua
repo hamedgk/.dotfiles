@@ -14,8 +14,12 @@ vim.cmd('set shortmess+=c')
 -- Configure LSP through rust-tools.nvim plugin.
 -- rust-tools will configure and enable certain LSP features for us.
 -- See https://github.com/simrat39/rust-tools.nvim#configuration
--- lua <<EOF
 local nvim_lsp = require'lspconfig'
+
+-- Update this path
+local extension_path = vim.env.HOME .. '/.vscode-oss/extensions/vadimcn.vscode-lldb-1.9.0-universal'
+local codelldb_path = extension_path .. 'adapter/codelldb'
+local liblldb_path = extension_path .. 'lldb/lib/liblldb.so'  -- MacOS: This may be .dylib
 
 local opts = {
     tools = { -- rust-tools options
@@ -44,14 +48,17 @@ local opts = {
             }
         }
     },
+
+    dap = {
+        adapter = require('rust-tools.dap').get_codelldb_adapter(
+            codelldb_path, liblldb_path)
+    }
 }
 
 require('rust-tools').setup(opts)
---EOF
 
 -- Setup Completion
 -- See https://github.com/hrsh7th/nvim-cmp#basic-configuration
---lua <<EOF
 local cmp = require'cmp'
 cmp.setup({
   -- Enable LSP snippets
@@ -84,5 +91,4 @@ cmp.setup({
     { name = 'buffer' },
   },
 })
---EOF
 
