@@ -14,7 +14,8 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term "LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/alacritty"
+# set $term "LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/alacritty"
+set $term "/usr/bin/alacritty"
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -45,6 +46,9 @@ for_window [app_id=".*"] split toggle
 #
 # Example configuration:
 #
+
+ exec ibus-daemon --xim -d -r
+
  exec swayidle -w \
           timeout 600 'swaylock -e -f -c 000000' \
           timeout 1000 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
@@ -80,6 +84,7 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86Search exec bemenu-run
+bindsym $mod+m exec bash ~/.config/sway/scripts/change_input_method.sh
 
 
 ### Key bindings
@@ -221,7 +226,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-include ./gromit-mpx.conf
+include ./scripts/gromit-mpx.conf
 #
 # Status Bar:
 #
@@ -231,7 +236,6 @@ bar {
 }
 
 include /etc/sway/config.d/*
-
 
 gaps inner 6
 gaps outer 2

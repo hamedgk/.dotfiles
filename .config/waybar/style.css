@@ -58,7 +58,6 @@
 #battery,
 #clock,
 #cpu,
-#custom-keyboard-layout,
 #memory,
 #mode,
 #network,
@@ -109,7 +108,12 @@
 }
 
 #cpu {
+    color: white;
   /* No styles */
+}
+
+#custom-ibus {
+    color: white;
 }
 
 #cpu.warning {
