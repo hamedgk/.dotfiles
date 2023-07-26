@@ -84,7 +84,7 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86Search exec bemenu-run
-bindsym $mod+m exec bash ~/.config/sway/scripts/change_input_method.sh
+bindsym Ctrl+Space exec bash ~/.config/sway/scripts/change_input_method.sh
 
 
 ### Key bindings
