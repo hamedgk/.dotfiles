@@ -16,7 +16,7 @@
     "position": "bottom",
 
     // If height property would be not present, it'd be calculated dynamically
-    "height": 20,
+    "height": 22,
 
     "modules-left": [
         "sway/workspaces",
@@ -26,13 +26,13 @@
         "sway/window"
     ],
     "modules-right": [
-        "network",
         //"memory",
-        "cpu",
         //"temperature",
         //"custom/keyboard-layout",
-        "battery",
         "tray",
+        "network",
+        "cpu",
+        "battery",
         "custom/ibus",
         "clock#date",
         "clock#time",
@@ -134,11 +134,6 @@
         "disable-scroll": true,
         "format": "{icon} {name}",
         "format-icons": {
-            "1:www": "龜", // Icon: firefox-browser
-            "2:mail": "", // Icon: mail
-            "3:editor": "", // Icon: code
-            "4:terminals": "", // Icon: terminal
-            "5:portal": "", // Icon: terminal
             "urgent": "",
             "focused": "",
             "default": ""
