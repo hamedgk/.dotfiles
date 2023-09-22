@@ -1,5 +1,5 @@
 import:
-  - /home/hamedgk/.config/draculatheme/dracula.yml
+  - ~/.config/alacritty/themes/themes/hardhacker.yaml
 
 
 font:
@@ -19,8 +19,8 @@ font:
     family: JetBrainsMono
     style: Bold Italic
 
-  size: 13
+  size: 12
 
 
 window:
-  opacity: 0.7
+  opacity: 0.8

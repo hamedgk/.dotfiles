@@ -12,9 +12,6 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
     use 'wbthomason/packer.nvim' -- nvim lua plugin manager
 
-    -- Theme
-    use "EdenEast/nightfox.nvim" -- Packer
-
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

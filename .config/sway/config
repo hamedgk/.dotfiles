@@ -19,15 +19,15 @@ set $term "/usr/bin/alacritty"
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu bemenu-run -l 5 --fn JetBrainsMono[5]  | xargs swaymsg exec --
+set $menu bemenu-run -l 10 --fn JetBrainsMono[6]  | xargs swaymsg exec --
 
 
 
 ### Output configuration
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/wallpapers/NyaITD5-arch-linux-wallpaper.png fill
-
+set $wallpapers_path $HOME/Pictures/wallpapers
+output * bg `find $wallpapers_path -type f | shuf -n 1` fill
 
 default_border pixel 2
 
@@ -83,7 +83,7 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86Search exec bemenu-run
-bindsym Ctrl+Space exec bash ~/.config/sway/scripts/change_input_method.sh
+bindsym $mod+p exec bash ~/.config/sway/scripts/change_input_method.sh
 
 
 ### Key bindings
@@ -236,5 +236,5 @@ bar {
 
 include /etc/sway/config.d/*
 
-gaps inner 6
+gaps inner 5
 gaps outer 2
