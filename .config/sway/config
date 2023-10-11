@@ -84,6 +84,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86Search exec bemenu-run
 bindsym $mod+p exec bash ~/.config/sway/scripts/change_input_method.sh
+bindsym $mod+Print exec /opt/grim/grimshot.sh
 
 
 ### Key bindings
