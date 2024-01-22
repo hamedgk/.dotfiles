@@ -1,0 +1,4 @@
+- entr
+    - a tool for watching file system and run a command on file change
+    - use this tool for live reloading my golang projects
+        alias gorel="ls -R *.go | entr -r go run ."
