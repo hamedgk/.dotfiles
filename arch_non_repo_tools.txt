@@ -2,4 +2,4 @@
     - a tool for watching file system and run a command on file change
     - https://github.com/eradman/entr
     - use this tool for live reloading my golang projects
-        alias gorel="ls -R *.go | entr -r go run ."
+      alias golive="find . -name '*.go' | entr -r go run ."
