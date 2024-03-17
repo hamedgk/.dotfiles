@@ -1,5 +1,27 @@
 - entr
-    - a tool for watching file system and run a command on file change
-    - https://github.com/eradman/entr
-    - use this tool for live reloading my golang projects
-      alias golive="find . -name '*.go' | entr -r go run ."
+	- a tool for watching file system and run a command on file change
+	- I use this tool for reloading my golang project on change
+	- https://github.com/eradman/entr
+	commands:
+		alias golive="find . -name '*.go' | entr -r go run ."
+
+- locust
+	- a python framework for benchmarking
+	- install with pip in the venv bin
+	- no need to install pip globally let alone locust globally :)
+	- you can set a alias to pathto/bin/locust for ease!
+	commands:
+		locust -f pathto/locustfile.py
+	open up a browser to see locust web ui. it's on localhost:8089 you can bookmark it.
+
+- code
+	- with extensions:
+		- git graph
+		- go
+		- vim
+		- material icon theme
+		- tokio night
+	- for now
+
+-postgresql
+	- db I use for now
