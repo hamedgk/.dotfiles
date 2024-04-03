@@ -11,4 +11,4 @@ then
 fi
 
 
-grim -g "$(slurp)" -l 7 -t png $1
+grim -g "$(slurp)" -l 7 -t png - | wl-copy
