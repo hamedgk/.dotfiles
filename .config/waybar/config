@@ -16,7 +16,7 @@
     "position": "bottom",
 
     // If height property would be not present, it'd be calculated dynamically
-    "height": 22,
+    "height": 25,
 
     "modules-left": [
         "sway/workspaces",
@@ -26,16 +26,15 @@
         "sway/window"
     ],
     "modules-right": [
-        //"memory",
-        //"temperature",
-        //"custom/keyboard-layout",
+        //"memory,
         "tray",
         "network",
-        "cpu",
+        //"cpu",
+        "temperature",
         "battery",
-        "custom/ibus",
         "clock#date",
         "clock#time",
+        //"custom/keyboard-layout",
         "pulseaudio"
     ],
 
@@ -95,13 +94,6 @@
       "tooltip": false
     },
 
-    "custom/ibus": {
-      "exec": "bash -c 'ibus engine | cut -d: -f2 | tr '[:lower:]' '[:upper:]''",
-      "interval": 1,
-      "format": " {}",
-      "tooltip": "IBus Input Engine"
-    },
-
     "memory": {
         "interval": 5,
         "format": "  {}%", // Icon: memory
@@ -159,7 +151,7 @@
 
     "temperature": {
       "critical-threshold": 80,
-      "interval": 5,
+      "interval": 10,
       "format": "{icon}  {temperatureC}°C",
       "format-icons": [
           "", // Icon: temperature-empty
