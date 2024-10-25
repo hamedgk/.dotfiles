@@ -47,8 +47,9 @@ for_window [app_id=".*"] split toggle
 # Example configuration:
 #
 
- exec ibus-daemon -drsR --desktop=sway -p disable -c disable
- exec swayidle -w \
+exec ibus-daemon -n sway -rsd
+
+exec swayidle -w \
           timeout 600 'swaylock -e -f -c 000000' \
           timeout 1000 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
           before-sleep 'swaylock -e -f -c 000000'
@@ -67,6 +68,11 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
     natural_scroll enabled
     middle_emulation enabled
     pointer_accel 0.5
+}
+
+input type:keyboard {
+    xkb_layout us,ir(pes_keypad),ir
+    xkb_options grp:alt_shift_toggle
 }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
@@ -224,7 +230,6 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-
 
 include ./scripts/gromit-mpx.conf
 #
