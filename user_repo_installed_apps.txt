@@ -1,6 +1,6 @@
-code-features 1.93.1-1
-gromit-mpx 1.7.0-1
-postman-bin 11.15.0-1
-rar 7.01-1
-vazirmatn-fonts 33.003-1
-yay 12.4.2-1
+code-features
+gromit-mpx
+postman-bin
+rar
+vazirmatn-fonts
+yay
