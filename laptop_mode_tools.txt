@@ -1,4 +1,0 @@
-for reducing HDD spinning:
-    install hdparm
-
-

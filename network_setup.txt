@@ -15,12 +15,13 @@ and add these configs:
     EnableNetworkConfiguration=true
 
     [Network]
-    NameResolvingService=systemd
+    NameResolvingService=systemd or (resolvconf to read from /etc/resolv.conf)
 
 
 these enable iwd to do dhcp stuff and dns stuff
 
 -----------------------------------------------------------------------------------------------------
+//not used right now
 
 in file /etc/NetworkManager/conf.d/dhcp-client.conf
 add these to tell networkmanager to use dhclient instead of internal dhcp client:
@@ -30,6 +31,7 @@ add these to tell networkmanager to use dhclient instead of internal dhcp client
 
 
 -----------------------------------------------------------------------------------------------------
+//not used right now
 
 in file /etc/NetworkManager/conf.d/dns.conf
 add these to tell networkmanager explicitly which dns to use (although systemd-resolved is the default):

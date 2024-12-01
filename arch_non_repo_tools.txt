@@ -20,8 +20,3 @@
 		- go
 		- vim
 		- material icon theme
-		- tokio night
-	- for now
-
--postgresql
-	- db I use for now
