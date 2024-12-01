@@ -16,7 +16,7 @@
     "position": "bottom",
 
     // If height property would be not present, it'd be calculated dynamically
-    "height": 25,
+    "height": 30,
 
     "modules-left": [
         "sway/workspaces",
@@ -26,13 +26,13 @@
         "sway/window"
     ],
     "modules-right": [
-        //"memory,
         "tray",
         "network",
-        //"cpu",
+        "cpu",
+        "memory",
         "temperature",
         "battery",
-        "clock#date",
+        //"clock#date",
         "clock#time",
         //"custom/keyboard-layout",
         "pulseaudio"
@@ -66,6 +66,7 @@
     "clock#time": {
         "interval": 60,
         "format": "{:%H:%M}",
+        "tooltip-format": "{:%e %B %Y}",
         "tooltip": true
     },
 
@@ -85,7 +86,7 @@
     },
 
     "custom/keyboard-layout": {
-      "exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
+      "exec": "swaymsg -t get_inputs | grep -m1 xkb_active_layout_name | grep -oP '\\(\\K[^)]+'",
       // Interval set only as a fallback, as the value is updated by signal
       "interval": 30,
       "format": " {}", // Icon: keyboard
@@ -95,10 +96,10 @@
     },
 
     "memory": {
-        "interval": 5,
+        "interval": 15,
         "format": "  {}%", // Icon: memory
         "states": {
-            "warning": 70,
+            "warning": 50,
             "critical": 90
         }
     },

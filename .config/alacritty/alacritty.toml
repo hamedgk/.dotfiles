@@ -1,0 +1,26 @@
+
+[font]
+size = 12
+
+[font.bold]
+family = "JetBrainsMono"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono"
+style = "Regular"
+
+[window]
+opacity = 0.6
+
+[general]
+import = ["~/.config/alacritty/themes/dracula.toml"]
+# import = ["~/.config/alacritty/themes/papercolor_light.toml"]

@@ -48,7 +48,7 @@
 
 /* The whole bar */
 #waybar {
-    background: #323232;
+    background: black;
     color: white;
     font-family: Cantarell, Noto Sans, sans-serif;
     font-size: 13px;
@@ -56,6 +56,7 @@
 
 /* Each module */
 #battery,
+#custom-keyboard-layout,
 #clock,
 #cpu,
 #memory,
@@ -110,10 +111,6 @@
 #cpu {
     color: white;
   /* No styles */
-}
-
-#custom-ibus {
-    color: white;
 }
 
 #cpu.warning {
