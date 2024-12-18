@@ -1,4 +1,5 @@
 code-features
+google-chrome
 gromit-mpx
 postman-bin
 rar

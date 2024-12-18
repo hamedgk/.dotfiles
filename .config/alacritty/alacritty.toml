@@ -20,7 +20,10 @@ style = "Regular"
 
 [window]
 opacity = 0.6
+blur = true
 
 [general]
-import = ["~/.config/alacritty/themes/dracula.toml"]
-# import = ["~/.config/alacritty/themes/papercolor_light.toml"]
+#import = ["~/.config/alacritty/themes/dracula.toml"]
+#import = ["~/.config/alacritty/themes/papercolor_light.toml"]
+#import = ["~/.config/alacritty/themes/gruvbox_light.toml"]
+import = ["~/.config/alacritty/themes/github_light_high_contrast.toml"]

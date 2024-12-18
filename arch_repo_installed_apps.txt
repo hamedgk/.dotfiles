@@ -1,6 +1,7 @@
 alacritty
 alsa-utils
 base
+base-devel
 bc
 bemenu-wayland
 brightnessctl
@@ -11,10 +12,10 @@ docker
 docker-compose
 dosfstools
 efibootmgr
-firefox
 gcc
 git
 go
+google-chrome
 grim
 gromit-mpx
 grub
@@ -28,6 +29,7 @@ make
 man-db
 mesa
 mesa-utils
+mpv
 ncdu
 nodejs
 npm
@@ -58,7 +60,6 @@ vazirmatn-fonts
 vim
 virtualbox
 virtualbox-host-modules-arch
-vlc
 vulkan-radeon
 waybar
 wf-recorder
