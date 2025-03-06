@@ -1,20 +1,18 @@
 alacritty
 alsa-utils
+aria2
 base
 base-devel
-bc
 bemenu-wayland
 brightnessctl
 code
 code-features
-cups
 docker
 docker-compose
 dosfstools
 efibootmgr
 gcc
 git
-go
 google-chrome
 grim
 gromit-mpx
@@ -31,8 +29,6 @@ mesa
 mesa-utils
 mpv
 ncdu
-nodejs
-npm
 openresolv
 pacman-contrib
 pipewire
@@ -40,6 +36,7 @@ pipewire-alsa
 pipewire-pulse
 postman-bin
 python
+python38
 qbittorrent
 ranger
 rar
@@ -61,6 +58,7 @@ vim
 virtualbox
 virtualbox-host-modules-arch
 vulkan-radeon
+vulkan-tools
 waybar
 wf-recorder
 which

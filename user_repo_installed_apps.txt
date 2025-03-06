@@ -2,6 +2,8 @@ code-features
 google-chrome
 gromit-mpx
 postman-bin
+python38
+python38-debug
 rar
 vazirmatn-fonts
 yay

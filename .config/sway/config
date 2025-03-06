@@ -26,7 +26,7 @@ set $menu bemenu-run -l 10 --fn JetBrainsMono[6]  | xargs swaymsg exec --
 ### Output configuration
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-set $wallpapers_path $HOME/Pictures/wallpapers
+set $wallpapers_path $HOME/Pictures/wallpapers/light
 output * bg `find $wallpapers_path -type f | shuf -n 1` fill
 
 default_border pixel 2
